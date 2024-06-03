@@ -1,0 +1,266 @@
+@font-face {
+    font-family: gilroy;
+    src: url("Gilroy-SemiBold.ttf");
+}
+@font-face {
+    font-family: classy;
+    src: url("cooperltbtlight.ttf");
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:classy;
+   
+
+    
+       
+
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    overflow-x: hidden;
+
+}
+
+#main{
+    height: 100vh;
+    width:100vw;
+    background-color:#ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-size: cover;
+    background-image: url("neptune.webp");
+    /* animation:pop-in 1s ; */
+    
+}
+/* @keyframes pop-in{
+    0%{
+      opacity: 0;
+      transform:translateY(-20rem) scale(.8);
+    }
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+} */
+#nav{
+    height: 60px;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left:0px;
+    background-color: #ffffff42;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 99;
+}
+#nav>h1{
+    
+    font-weight: 100;
+    font-family: classy;
+    letter-spacing: 5px;
+    color:#ffffff;
+    font-size: 5vmin;
+    
+    
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    font-family: gilroy;
+    margin: 20px;
+    color:#ffffff;
+    transition: 0.3s ease;
+
+}
+#nav #part2 a:hover{
+    padding: 10px;
+    border: 2px solid whitesmoke;
+}
+#nav #part2 a:nth-last-child(1){
+    overflow: hidden;
+    position: relative;
+    padding: 10px  20px; 
+    border-radius: 60px;
+    border: 1px solid #ffffff;
+    transition:left .8s ease;
+}
+#nav #part2 a:nth-last-child(1) #org{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: -350px;
+    transition: left 0.5s ease;
+    
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 200;
+    font-family: gilroy;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1):hover{
+    color: #000000;
+}
+#nav #part2 a:nth-last-child(1):hover #org{
+    left: 0;
+    
+}
+.center-title{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    
+    bottom:50px;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+.center-title h1,h3{
+    padding: 10px;
+    font-weight: 200;
+    background-color: #000000;
+   
+    
+    /* text-shadow: 2px 10px #000000; */
+
+}
+.center-title-exp{
+    width: 40px;
+    height: 20px;
+    position: relative;
+    padding: 20px;
+    bottom: 30px;
+    border: 1px;
+    border-radius: 100vmin;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+.center-title-exp:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.part2{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.part2 .left{
+  width:30vw ;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  height: auto;
+  padding-top: 5px;
+  flex: 0 4 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin: 10px;
+
+}
+.part2 .left a{
+    position: relative;
+    top: 60px;
+    white-space: nowrap;
+    position:sticky ;
+    margin-left: 20px;
+    margin-top: 40px;
+    bottom: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "gilroy";
+    transition: left 0.3s ease;
+
+}
+.part2 .left a:hover{
+    text-decoration: underline;
+}
+.part2 .right{
+    
+    width: 60%;
+  
+   
+    margin-left: 0.4%;
+    color: #ffffff;
+   
+}
+.part2 .right h1{
+    color: #ffffff;
+    font-size: 40px;
+    margin:50px 100px;
+    font-family: "gilroy";
+    position: relative;
+   
+   
+}
+.part2 .right p{
+    text-align:left;
+    width: 99%;
+    font-family: gilroy;
+    font-size: 17px;
+    margin-top: 20px;
+    
+    
+}
+.img1{
+    width: 60%;
+    height: 10%;
+    margin-top:30px;
+    
+}
+.Solar-System{
+    width:26%;
+    height: 60%;
+    position: relative;
+    right: 1px;
+    top: 200px;
+    overflow: hidden;
+   
+}
+.up{
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 500px;
+    position: relative;
+    bottom: 400px;
+    left: 3%;
+    top:-4%;
+}
+.up:hover{
+    background-color: #ffffff;
+    color: #000000;
+}

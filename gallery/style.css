@@ -1,0 +1,145 @@
+@font-face {
+    font-family: gilroy;
+    src: url("Gilroy-SemiBold.ttf");
+}
+@font-face {
+    font-family: classy;
+    src: url("cooperltbtlight.ttf");
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:classy;
+   
+
+    
+       
+
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    overflow-x: hidden;
+
+}
+
+#main{
+    height: 100vh;
+    width:100vw;
+    background-color:#ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-size: cover;
+    background-image: url("neptune.webp");
+    /* animation:pop-in 1s ; */
+    
+}
+/* @keyframes pop-in{
+    0%{
+      opacity: 0;
+      transform:translateY(-20rem) scale(.8);
+    }
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+} */
+#nav{
+    height: 60px;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left:0px;
+    background-color: #ffffff42;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+    z-index: 99;
+}
+#nav>h1{
+    
+    font-weight: 100;
+    font-family: classy;
+    letter-spacing: 5px;
+    color:#ffffff;
+    font-size: 5vmin;
+    
+    
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    font-family: gilroy;
+    margin: 20px;
+    color:#ffffff;
+    transition: 0.3s ease;
+
+}
+#nav #part2 a:hover{
+    padding: 10px;
+    border: 2px solid whitesmoke;
+}
+#nav #part2 a:nth-last-child(1){
+    overflow: hidden;
+    position: relative;
+    padding: 10px  20px; 
+    border-radius: 60px;
+    border: 1px solid #ffffff;
+    transition:left .8s ease;
+}
+#nav #part2 a:nth-last-child(1) #org{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: -350px;
+    transition: left 0.5s ease;
+    
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 200;
+    font-family: gilroy;
+    position: relative;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1):hover{
+    color: #000000;
+}
+#nav #part2 a:nth-last-child(1):hover #org{
+    left: 0;
+    
+}
+img{
+    max-width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 5px;
+    border: 2px solid white;
+    animation: pop-in 1s ;
+}
+@keyframes pop-in{
+    0%{
+      opacity: 0;
+      transform:translateY(-20rem) scale(.8);
+    }
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+}
